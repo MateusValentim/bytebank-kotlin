@@ -11,6 +11,7 @@ class Gerente(
 
 
     override fun bonificacao(): Double {
+        println("bonificação gerente")
         return super.bonificacao() + salario
     }
 

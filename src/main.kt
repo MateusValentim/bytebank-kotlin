@@ -2,25 +2,31 @@ fun main() {
     println("Bem vindo ao Bytebank:")
     println()
 
-    val mateus = Funcionario(
+    val mateus : Funcionario = Funcionario(
         cpf = "233.222.765.42",
         nome = "Mateus Valentim",
         salario = 1000.0
     )
 
-    val helena = Gerente(
+    val helena : Gerente = Gerente(
         cpf = "111.111.111-11",
         nome = "Helena Regina Valentim",
         salario = 5000.0,
         senha = 1111
     )
 
-    val valentim = Diretor(
+    val valentim : Diretor = Diretor(
         cpf = "431.444.222.11",
         nome = "Mateus Valentim de Oliveira Silva Santos Conceição",
         salario = 10000.0,
         senha = 1234,
         plr = 500.0
+    )
+
+    val maria : Funcionario = Analista(
+        cpf = "123.456.123-x",
+        nome = "Maria da Silva Santos",
+        salario = 4000.0
     )
 
     println("nome: ${mateus.nome}")
@@ -59,6 +65,7 @@ fun main() {
     calculadora.registra(mateus)
     calculadora.registra(helena)
     calculadora.registra(valentim)
+    calculadora.registra(maria)
 
     println("total de bonificações: ${calculadora.total}")
 }

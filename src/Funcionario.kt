@@ -12,6 +12,7 @@ open class Funcionario(
 //    open val bonificacao : Double =  salario * 0.1
 
     open fun bonificacao() : Double = salario * 0.1
+
 }
 
 
