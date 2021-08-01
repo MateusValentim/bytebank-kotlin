@@ -3,7 +3,7 @@ open class Conta(var titular: String, val numeroConta: Int) {
         private set
 
     init {
-        //executa algo durante a construção
+        //executa durante a construção
     }
 
     fun deposita(valorDeposito: Double) {

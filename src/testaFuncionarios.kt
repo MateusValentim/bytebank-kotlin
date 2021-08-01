@@ -2,10 +2,11 @@ fun testaFuncionarios() {
     println("Bem vindo ao Bytebank:")
     println()
 
-    val mateus: Funcionario = Funcionario(
+    val mateus: Funcionario = Gerente(
         cpf = "233.222.765.42",
         nome = "Mateus Valentim",
-        salario = 1000.0
+        salario = 1000.0,
+        senha = 1234
     )
 
     val helena: Gerente = Gerente(
