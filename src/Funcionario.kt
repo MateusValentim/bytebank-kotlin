@@ -11,7 +11,7 @@ abstract class Funcionario(
     // função properties resumida em uma linha apenas
 //    open val bonificacao : Double =  salario * 0.1
 
-    open fun bonificacao() : Double = salario * 0.1
+    abstract fun bonificacao() : Double
 
 }
 
