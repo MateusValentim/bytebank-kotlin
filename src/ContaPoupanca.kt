@@ -3,7 +3,9 @@ class ContaPoupanca(titular: String, numeroConta: Int) : Conta
     numeroConta) {
 
     override fun sacarValor(valor: Double) {
-        super.sacarValor(valor)
+        if(this.saldo >= valor){
+            this.saldo -= valor
+        }
     }
 
 

@@ -1,7 +1,7 @@
  fun testaCopiasEReferencias() {
 
         //Referencias
-        val contaMateus = Conta("Mateus", 1005)
+        val contaMateus = ContaCorrente("Mateus", 1005)
 
         var contaHelena = contaMateus
         contaHelena.titular = "Helena"
@@ -16,8 +16,8 @@
         )
         //Copias
 
-        val contaThalia = Conta("Thalia", 1003)
-        val contaCecilia = Conta("Cecilia", 1004)
+        val contaThalia = ContaCorrente("Thalia", 1003)
+        val contaCecilia = ContaPoupanca("Cecilia", 1004)
 
         println("titular da conta thalia: ${contaThalia.titular}")
         println("titular da conta cecilia: ${contaCecilia.titular}")
