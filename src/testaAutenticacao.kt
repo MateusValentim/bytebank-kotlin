@@ -1,12 +1,12 @@
 fun testaAutenticacao() {
 
-    val gerente: FuncionarioAdmin = Gerente(
+    val gerente: Autenticavel = Gerente(
         nome = "Mateus",
         senha = 1234,
         salario = 2000.0,
         cpf = "123.123.123.21"
     )
-    val diretor: FuncionarioAdmin =
+    val diretor: Autenticavel =
         Diretor(
             nome = "Helena",
             senha = 1234,
