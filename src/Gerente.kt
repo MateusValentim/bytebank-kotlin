@@ -8,7 +8,8 @@ class Gerente(
     cpf = cpf,
     salario = salario,
     senha = senha
-) {
+) , Autenticavel {
+
     override fun bonificacao(): Double {
         println("bonificação gerente")
         return  salario * 2.0
