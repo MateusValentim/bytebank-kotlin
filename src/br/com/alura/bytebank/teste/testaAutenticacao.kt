@@ -1,4 +1,4 @@
-import br.com.bytebank.modelo.*
+import br.com.alura.bytebank.modelo.*
 
 fun testaAutenticacao() {
 
@@ -8,7 +8,7 @@ fun testaAutenticacao() {
         salario = 2000.0,
         cpf = "123.123.123.21"
     )
-    val diretor :Autenticavel =
+    val diretor : Autenticavel =
         Diretor(
             nome = "Helena",
             senha = 1234,

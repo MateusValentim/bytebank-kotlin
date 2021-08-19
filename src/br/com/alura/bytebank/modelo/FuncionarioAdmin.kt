@@ -1,6 +1,6 @@
-package br.com.bytebank.modelo
+package br.com.alura.bytebank.modelo
 
-import br.com.bytebank.modelo.Funcionario
+import br.com.alura.bytebank.modelo.Funcionario
 
 abstract class FuncionarioAdmin(
     nome: String,
@@ -14,7 +14,7 @@ abstract class FuncionarioAdmin(
     ) {
 
      fun autentica(senha: Int): Boolean {
-        println("autentica br.com.bytebank.modelo.FuncionarioAdmin")
+        println("autentica br.com.alura.bytebank.modelo.FuncionarioAdmin")
         if (this.senha == senha) {
             return true
         }

@@ -1,4 +1,4 @@
-import br.com.bytebank.modelo.*
+import br.com.alura.bytebank.modelo.*
 
 fun testaFuncionarios() {
     println("Bem vindo ao Bytebank:")

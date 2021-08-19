@@ -1,6 +1,6 @@
-package br.com.bytebank.modelo
+package br.com.alura.bytebank.modelo
 
-class Analista (
+class Auxiliar (
     nome: String,
     cpf: String,
     salario: Double
@@ -12,8 +12,8 @@ class Analista (
 ) {
 
     override fun bonificacao(): Double{
-        println("bonificação analista")
-        return salario * 0.2
+        println("bonificação br.com.alura.bytebank.modelo.Auxiliar")
+        return salario * 0.05
     }
 
 }

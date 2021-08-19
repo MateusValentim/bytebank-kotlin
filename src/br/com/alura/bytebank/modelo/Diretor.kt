@@ -1,4 +1,4 @@
-package br.com.bytebank.modelo
+package br.com.alura.bytebank.modelo
 
 class Diretor(
     nome: String,

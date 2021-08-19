@@ -1,6 +1,6 @@
-package br.com.bytebank.modelo
+package br.com.alura.bytebank.modelo
 
-import br.com.bytebank.modelo.Conta
+import br.com.alura.bytebank.modelo.Conta
 
 class ContaPoupanca(titular: String, numeroConta: Int) : Conta
     (titular,
