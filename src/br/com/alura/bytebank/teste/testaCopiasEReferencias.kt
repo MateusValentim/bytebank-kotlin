@@ -4,10 +4,12 @@ import br.com.alura.bytebank.modelo.ContaPoupanca
 fun testaCopiasEReferencias() {
 
         //Referencias
-        val contaMateus = ContaCorrente("Mateus", 1005)
+
+        val mateus = Cliente(nome = "Mateus", cpf = "", senha = 1)
+        val contaMateus = ContaCorrente(mateus, 1005)
 
         var contaHelena = contaMateus
-        contaHelena.titular = "Helena"
+        contaHelena.titular.nome = "Helena"
 
         println("titular conta mateus: ${contaMateus.titular}")
         println("titular conta helena: ${contaHelena.titular}")
@@ -19,8 +21,13 @@ fun testaCopiasEReferencias() {
         )
         //Copias
 
-        val contaThalia = ContaCorrente("Thalia", 1003)
-        val contaCecilia = ContaPoupanca("Cecilia", 1004)
+        val thalia = Cliente(nome = "Thalia", cpf = "", senha = 1)
+
+        val contaThalia = ContaCorrente(thalia, 1003)
+        val contaCecilia = ContaPoupanca(
+                Cliente(nome = "Cecilia", cpf = "", senha = 2),
+                1004
+        )
 
         println("titular da conta thalia: ${contaThalia.titular}")
         println("titular da conta cecilia: ${contaCecilia.titular}")

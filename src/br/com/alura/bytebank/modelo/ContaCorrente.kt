@@ -2,7 +2,7 @@ package br.com.alura.bytebank.modelo
 
 import br.com.alura.bytebank.modelo.Conta
 
-class ContaCorrente(titular: String, numeroConta: Int) : Conta
+class ContaCorrente(titular: Cliente, numeroConta: Int) : Conta
     (titular,
     numeroConta ) {
 

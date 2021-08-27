@@ -2,7 +2,7 @@ package br.com.alura.bytebank.modelo
 
 import br.com.alura.bytebank.modelo.Conta
 
-class ContaPoupanca(titular: String, numeroConta: Int) : Conta
+class ContaPoupanca(titular: Cliente, numeroConta: Int) : Conta
     (titular,
     numeroConta) {
 
