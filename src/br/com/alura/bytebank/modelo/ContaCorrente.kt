@@ -4,7 +4,7 @@ import br.com.alura.bytebank.modelo.Conta
 
 class ContaCorrente(titular: Cliente, numeroConta: Int) : Conta
     (titular,
-    numeroConta ) {
+    numeroConta) {
 
     override fun sacarValor(valor: Double) {
        val valorComTaxa = valor + 0.1

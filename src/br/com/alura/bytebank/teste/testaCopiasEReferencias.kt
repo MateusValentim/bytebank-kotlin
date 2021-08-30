@@ -1,11 +1,13 @@
+import br.com.alura.bytebank.modelo.Cliente
 import br.com.alura.bytebank.modelo.ContaCorrente
 import br.com.alura.bytebank.modelo.ContaPoupanca
+import br.com.alura.bytebank.modelo.Endereco
 
 fun testaCopiasEReferencias() {
 
         //Referencias
 
-        val mateus = Cliente(nome = "Mateus", cpf = "", senha = 1)
+        val mateus : Cliente = Cliente(nome = "Mateus", cpf = "", senha = 1)
         val contaMateus = ContaCorrente(mateus, 1005)
 
         var contaHelena = contaMateus
@@ -29,8 +31,8 @@ fun testaCopiasEReferencias() {
                 1004
         )
 
-        println("titular da conta thalia: ${contaThalia.titular}")
-        println("titular da conta cecilia: ${contaCecilia.titular}")
+        println("titular da conta thalia: ${contaThalia.titular.nome}")
+        println("titular da conta cecilia: ${contaCecilia.titular.nome}")
 
         //Imprimindo o hash
         println(contaThalia)

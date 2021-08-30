@@ -1,5 +1,8 @@
 package br.com.alura.bytebank.modelo
 
+var totalContas : Int = 0
+    private set
+
 abstract class Conta(
     var titular: Cliente,
     val numeroConta: Int
@@ -8,7 +11,8 @@ abstract class Conta(
         protected set
 
     init {
-        //executa durante a construção
+        println("Criando conta")
+        totalContas++
     }
 
     fun deposita(valorDeposito: Double) {
@@ -17,7 +21,7 @@ abstract class Conta(
         }
     }
 
-     abstract fun sacarValor(valor: Double)
+    abstract fun sacarValor(valor: Double)
 
     fun transfere(valor: Double, contaDestino: Conta): Boolean {
         if (saldo >= valor) {
@@ -27,5 +31,5 @@ abstract class Conta(
         }
         return false
     }
-    
+
 }
