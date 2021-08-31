@@ -10,5 +10,6 @@ class Endereco(
     var complemento: String = ""
 ) {
 
+    override fun toString(): String = "Endereço (Logradouro: '$logradouro', 'numero=$numero', 'bairro=$bairro', 'cidade=$cidade', 'estado=$estado', 'cep=$cep', 'complemento=$complemento'"
 
 }
