@@ -2,6 +2,7 @@ import br.com.alura.bytebank.modelo.*
 
 fun testaAutenticacao() {
 
+    //gerente herda de FuncionarioAdmin que implementa Autenticavel
     val gerente : Autenticavel = Gerente(
         nome = "Mateus",
         senha = 1234,
@@ -23,9 +24,17 @@ fun testaAutenticacao() {
         senha = 1234
 
     )
+    //analista implementando Autenticavel
+    val analista = Analista (
+        nome =  "Jackson",
+        cpf = "",
+        salario = 3000.0,
+        senha = 1234
+        )
 
     val sistemaInterno = SistemaInterno()
     sistemaInterno.entra(gerente, senha = 1234)
     sistemaInterno.entra(diretor, senha = 1234)
     sistemaInterno.entra(cliente, senha = 1234)
+    sistemaInterno.entra(analista, senha = 1234)
 }
