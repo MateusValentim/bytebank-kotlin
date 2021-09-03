@@ -6,7 +6,7 @@ import java.lang.NumberFormatException
 
 fun main() {
     println("Inicio main")
-   val entrada: String = "1.9"
+   val entrada: String = "1.0"
 
    val valorRecebido: Double? = try {
         entrada.toDouble()
@@ -23,8 +23,8 @@ fun main() {
         0.0
     }
 
-    if (valorRecebido != null){
-        println("valor recebido: $valorRecebido")
+    if (valorComTaxa != null){
+        println("valor recebido: $valorComTaxa")
     } else {
         println("valor inválido")
     }
