@@ -1,14 +1,32 @@
 import br.com.alura.bytebank.modelo.*
 import java.lang.ArithmeticException
 import java.lang.ClassCastException
+import java.lang.NumberFormatException
 
 
 fun main() {
     println("Inicio main")
-    try {
-        10/0
-    } catch ( e :ArithmeticException){
-        println("ArithmeticException foi capturada, por favor divida por algum número válido")
+   val entrada: String = "1.9"
+
+   val valorRecebido: Double? = try {
+        entrada.toDouble()
+   }catch (e: NumberFormatException){
+       println("Falha da conversão")
+       e.printStackTrace()
+       null
+   }
+
+    //If expression
+    val valorComTaxa : Double? = if (valorRecebido != null){
+        valorRecebido + 0.1
+    } else {
+        0.0
+    }
+
+    if (valorRecebido != null){
+        println("valor recebido: $valorRecebido")
+    } else {
+        println("valor inválido")
     }
     funcao1()
     println("Fim main")
