@@ -3,24 +3,24 @@ import br.com.alura.bytebank.exception.SaldoInsuficienteException
 
 fun main() {
     println("Inicio main")
-    funcao1()
+    testaComportamentosConta()
     println("Fim main")
 }
 
 
-fun funcao1(){
+fun funcao1() {
     println("Inicio função 1")
     try {
         funcao2()
-    } catch (e : SaldoInsuficienteException){
+    } catch (e: SaldoInsuficienteException) {
         println("SaldoInsuficienteException foi capturada")
     }
     println("Fim função 1")
 }
 
-fun funcao2(){
-println("Inicio função 2")
-    for (i in 1..5){
+fun funcao2() {
+    println("Inicio função 2")
+    for (i in 1..5) {
         println(i)
         //Exception de cast
         throw SaldoInsuficienteException()

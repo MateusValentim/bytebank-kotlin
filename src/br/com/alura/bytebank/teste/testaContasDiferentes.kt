@@ -22,7 +22,7 @@ fun testaContasDiferentes() {
     println("Numero: ${contaPoupanca.titular.endereco.numero}")
     println("Saldo br.com.alura.bytebank.modelo.Conta Corrente: ${corrente.saldo}")
 
-    corrente.transfere(100.0, contaPoupanca)
+    corrente.transfere(100.0, contaPoupanca, 3)
 
     println("Saldo br.com.alura.bytebank.modelo.Conta Poupança: ${contaPoupanca.saldo}")
     println("Saldo br.com.alura.bytebank.modelo.Conta Corrente: ${corrente.saldo}")
