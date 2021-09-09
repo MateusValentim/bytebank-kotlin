@@ -4,9 +4,12 @@ import br.com.alura.bytebank.modelo.Endereco
 
 fun main() {
 
-    val endereco : Endereco? = null
-    val enderecoNaoNulo : Endereco = endereco!!
-    enderecoNaoNulo.logradouro
+var enderecoNulo: Endereco? = Endereco(logradouro = "Rua vergueiro")
+val novoLogradouro: String? = enderecoNulo?.logradouro
+
+    enderecoNulo?.let {
+        println(it.logradouro.length)
+    }
 }
 
 
